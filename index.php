@@ -87,7 +87,8 @@
                 </tr>
               </thead>
               <tbody>
-             <?  debug($cliente); foreach ($cliente->array as $key=>$row ) {  ?>
+             <?  #debug($cliente); 
+             foreach ($cliente->array as $key=>$row ) {  ?>
                    
             
 

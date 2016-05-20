@@ -1,7 +1,7 @@
 <?
   require_once("clientes.class.php");
 
- $id = $_GET['id'];
+ @$id = $_GET['id'];
 
  $clientes = array(1=>array("nome"=>"Danilo Gonçalves Aurelio","cpf"=>"156.666.988-55","rg"=>"15446654","telefone"=>"4299887744"),
             2=>array("nome"=>"João silva Salro","cpf"=>"355.658.568-88","rg"=>"145455","telefone"=>"4299887744"),
@@ -76,20 +76,20 @@
            <form>
               <div class="form-group">
                 <label for="exampleInputEmail1">Nome</label>
-                <input type="text" class="form-control " id="exampleInputEmail1" value="<?=$cliente->array[$id]['nome'];?>">
+                <input type="text" class="form-control " id="exampleInputEmail1" value="<?=@$cliente->array[$id]['nome'];?>">
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">CPF</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" value="<?=$cliente->array[$id]['cpf'];?>" >
+                <input type="text" class="form-control" id="exampleInputPassword1" value="<?=@$cliente->array[$id]['cpf'];?>" >
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">RG</label> 
-                <input type="text" class="form-control" id="exampleInputPassword1" value="<?=$cliente->array[$id]['rg'];?>" >
+                <input type="text" class="form-control" id="exampleInputPassword1" value="<?=@$cliente->array[$id]['rg'];?>" >
               </div>
 
               <div class="form-group">
                 <label for="exampleInputPassword1">Telefone</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" value="<?=$cliente->array[$id]['telefone'];?>"" >
+                <input type="text" class="form-control" id="exampleInputPassword1" value="<?=@$cliente->array[$id]['telefone'];?>"" >
               </div>
 
 

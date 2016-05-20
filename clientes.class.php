@@ -17,11 +17,11 @@
 		public function __construct(array $arguments = array()){
 			$this -> array = $arguments;
 			
-			foreach ($arguments as $key => $row) {
+			/*foreach ($arguments as $key => $row) {
 					$this->nome = $row['nome'];
 						
 			}		
-
+			*/
 
 		}
 
